@@ -1,9 +1,4 @@
-CREATE TABLE Employee ( 
-    E_id NUMBER PRIMARY KEY, 
-    E_name VARCHAR2(100), 
-    Age NUMBER, 
-    Salary NUMBER 
-); 
+CREATE TABLE Employee (E_id NUMBER PRIMARY KEY, E_name VARCHAR2(100), Age NUMBER, Salary NUMBER ); 
 
   
 
