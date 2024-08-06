@@ -1,9 +1,4 @@
-Mysql> CREATE TABLE EmP ( 
-E_id INT, 
-E_name VARCHAR(100), 
-Age INT, 
-Salary DECIMAL(10, 2) 
-); 
+Mysql> CREATE TABLE EmP ( E_id INT, E_name VARCHAR(100), Age INT, Salary DECIMAL(10, 2)); 
 Mysql> desc EmP;
 
 
