@@ -1,0 +1,37 @@
+CREATE TABLE Employee ( 
+EMPNO INT, 
+ENAME VARCHAR(100), 
+JOB VARCHAR(100), 
+MANAGER_NO INT, 
+SAL DECIMAL(10, 2), 
+COMMISSION DECIMAL(10, 2) 
+); 
+Mysql>desc Employee; 
+
+
+INSERT INTO Employee (EMPNO, ENAME, JOB, MANAGER_NO, SAL, 
+COMMISSION)
+VALUES (1, 'John Doe', 'Manager', 1234, 5000, 1000); 
+INSERT INTO Employee (EMPNO, ENAME, JOB, MANAGER_NO, SAL, 
+COMMISSION) 
+VALUES (2, 'Jane Smith', 'Analyst', 2345, 4000, 500); 
+INSERT INTO Employee (EMPNO, ENAME, JOB, MANAGER_NO, SAL, 
+COMMISSION)       VALUES (3, 'Bob Johnson', 'Clerk', 3456, 3000, 250);
+Select * from employee;
+
+
+
+ALTER TABLE Employee 
+ADD CONSTRAINT PK_Employee PRIMARY KEY (EMPNO); 
+ 
+ALTER TABLE Employee 
+MODIFY (ENAME NOT NULL, JOB NOT NULL, SAL NOT NULL); 
+ 
+   SQL> desc employee
+
+
+
+SQL>INSERT INTO Employee (EMPNO, ENAME, JOB, MANAGER_NO, SAL,                                                                      
+COMMISSION) VALUES (NULL, NULL, NULL, NULL, NULL, NULL); 
+
+ SQL> desc employee

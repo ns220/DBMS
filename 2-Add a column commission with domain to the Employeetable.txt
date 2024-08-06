@@ -1,0 +1,29 @@
+SQL> create table employee(empno number,ename varchar2(10),job varchar2(10),mgr number,sal                                        
+number);  
+
+
+Insert into employee values(101,'abhi','manager',1234,10000,'70') 
+
+Insert into employee values(102,'rohith','analyst',2345,9000,'65')
+
+Insert into employee values(103,'david','analyst',3456,9000,'65')  
+  
+Insert into employee values(104,'rahul','clerk',4567,7000,'55')  
+
+Insert into employee values(105,'pramod','salesman',5678,5000,'50')  
+SQL> select * from employee; 
+
+
+
+SQL> update employee set job='trainee' where empno=103; 
+
+
+
+SQL> alter table employee rename column mgr to manager_no;  
+Table altered.   
+SQL> desc employee;
+
+
+
+SQL> delete employee where empno=105;  
+SQL> select * from employee; 

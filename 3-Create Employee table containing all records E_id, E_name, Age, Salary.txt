@@ -1,0 +1,50 @@
+Mysql> CREATE TABLE EmP ( 
+E_id INT, 
+E_name VARCHAR(100), 
+Age INT, 
+Salary DECIMAL(10, 2) 
+); 
+Mysql> desc EmP;
+
+
+
+Mysql> INSERT INTO EmP  VALUES(101,’Alice’,35, 10000); 
+
+Insert into emp values (102,’Bob’, 30, 15000); 
+
+Insert into emp values (103,’Charlie’,28, 12000); 
+
+Insert into emp values (104,’David’,40,25000), 
+
+Insert into emp values (105,’Eve’, 50,100000); 
+SQL> select * from emp; 
+
+
+
+Mysql>SELECT COUNT(E_name) AS NumberOfEmployees FROM EmP;
+
+
+
+Mysql> SELECT MAX(Age) AS OldestAge FROM EmP;
+
+
+
+Mysql> SELECT MIN(Age) AS YoungestAge FROM EmP;
+
+
+
+mysq> SELECT E_id, E_name, Age, Salary FROM EmP ORDER BY Salary ASC;
+
+
+
+
+mysql&gt; INSERT INTO EmP (E_id, E_name, Age, Salary) VALUES 
+(106,radheep,35,35000),(107,Deepa,50,200000);
+
+
+
+
+
+Mysql> SELECT Age, COUNT(*) AS NumberOfEmployees, SUM(Salary) AS 
+TotalSalaries, AVG(Salary) AS AverageSalary, MIN(Salary) AS LowestSalary, 
+MAX(Salary)AS HighestSalary FROM EmP GROUP BY Age;
